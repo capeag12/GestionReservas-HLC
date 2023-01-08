@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "axios": "^1.2.2",
+    "postman-request": "^2.88.1-postman.31",
+    "yargs": "^17.6.2"
+  }
+}
