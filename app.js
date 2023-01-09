@@ -71,6 +71,28 @@ yargs.command({
     }
 })
 
+yargs.command({
+    command:'borraReserva',
+    describe:'Elimina una reserva',
+
+    builder:{
+        nombre:{
+            describe:'Se eliminará la reserva con este nombre',
+            demandOption: 'true',
+            default:'',
+            type:'string'
+        }
+    },
+
+    handler:(argv)=>{
+        let nombre = argv.nombre
+        modulo.borraReserva(service,nombre)
+
+    }
+
+
+})
+
 yargs.parse()
 
 

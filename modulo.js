@@ -27,3 +27,8 @@ exports.addReserva = (servicio,reserva)=> {
     fs.writeFileSync('listaReservas.json', JSON.stringify(servicio.listaReservas))
     
 }
+
+exports.borraReserva=(servicio, nombre)=>{
+    servicio.eliminarReserva(nombre)
+    fs.writeFileSync('listaReservas.json', JSON.stringify(servicio.listaReservas))
+}
